@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bytter.scf.front.demo.mapper.DemoMapper">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+		id,name,sex,LOGIN_NAME as loginName,CREATE_TIME as createTime;
+	</sql>
+
+    <delete id="deleteAll">
+		DELETE FROM demo
+	</delete>
+</mapper>
